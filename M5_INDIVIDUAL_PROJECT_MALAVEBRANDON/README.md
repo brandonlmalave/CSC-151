@@ -1,3 +1,4 @@
+
 # Concrete Pad Estimator
 
 A Java console application that generates cost estimates for concrete pad construction jobs: materials, labor, waste, discounts, and a final total. Labor data is saved to and loaded from a CSV file so past jobs can be reviewed later.
@@ -112,6 +113,17 @@ Brandon's Warehouse,5,8.0,25.0
 ```
 
 New jobs are added to the end of the file, so older jobs are never erased.
+
+## Testing
+
+`EstimateTest.java` contains 8 JUnit 5 unit tests for the calculation logic. Each test builds a known job and checks the result against an answer worked out by hand: area, cubic yards, waste, labor hours and cost, material cost, percentage and fixed discounts, and the final total. One test also checks an edge case: a fixed discount larger than the job never takes the total below zero.
+
+To run them in VS Code, open the Testing panel (flask icon) and click Run. From the command line:
+
+```
+javac -cp lib/junit-platform-console-standalone-1.14.4.jar -d out src/*.java
+java -jar lib/junit-platform-console-standalone-1.14.4.jar execute -cp out --select-class EstimateTest
+```
 
 ## Future Improvements
 
