@@ -2,6 +2,10 @@
 
 A Java console application that generates cost estimates for concrete pad construction jobs: materials, labor, waste, discounts, and a final total. Labor data is saved to and loaded from a CSV file so past jobs can be reviewed later.
 
+## Demo
+
+[![Watch the demo](https://img.youtube.com/vi/fhGOMvfmYkU/0.jpg)](https://youtu.be/fhGOMvfmYkU)
+
 ## Background
 
 My friend Jim inherited his uncle's construction business, which builds large warehouse facilities. He knows construction, but estimating concrete jobs (materials, labor, and costs) was confusing and slow. This program walks him through each job step by step and does the math for him.
