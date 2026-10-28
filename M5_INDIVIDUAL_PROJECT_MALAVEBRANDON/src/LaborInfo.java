@@ -19,13 +19,11 @@ public class LaborInfo {
 
     /** total labor hours = workers x hours per worker */
     public double getTotalHours() {
-        // TODO
         return workers * hoursPerWorker;
     }
 
     /** labor cost = total hours x hourly rate */
     public double getLaborCost() {
-        // TODO
         return getTotalHours() * hourlyRate;
     }
 }
