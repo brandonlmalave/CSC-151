@@ -121,8 +121,8 @@ New jobs are added to the end of the file, so older jobs are never erased.
 To run them in VS Code, open the Testing panel (flask icon) and click Run. From the command line:
 
 ```
-javac -cp lib/junit-platform-console-standalone-1.14.4.jar -d out src/*.java
-java -jar lib/junit-platform-console-standalone-1.14.4.jar execute -cp out --select-class EstimateTest
+javac -cp src/junit-platform-console-standalone-1.14.4.jar -d out src/*.java
+java -jar src/junit-platform-console-standalone-1.14.4.jar execute -cp out --select-class EstimateTest
 ```
 
 ## Future Improvements
